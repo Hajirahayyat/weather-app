@@ -119,9 +119,13 @@ body::before {
 
 .search-icon {
   position: absolute;
-  left: 16px;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
   color: #888;
   pointer-events: none;
+  width: 18px;
+  height: 18px;
 }
 
 #cityInput {
@@ -375,8 +379,8 @@ body::before {
   .app-header {
     width: 160px;
     padding: 20px 12px;
-    clip-path: none;
     border-radius: 0 30px 30px 0;
+    clip-path: path('M0,0 H140 C160,90 130,180 155,270 C180,360 140,450 140,540 H0 Z');
   }
 
   .header-icon-small svg {
