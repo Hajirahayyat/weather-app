@@ -373,68 +373,63 @@ body::before {
 }
 @media (max-width: 900px) {
   .app-header {
-    position: relative;
-    width: 100%;
-    height: auto;
+    width: 160px;
+    padding: 20px 12px;
     clip-path: none;
-    border-radius: 0 0 24px 24px;
-    padding: 30px 24px;
-    align-items: center;
-    text-align: center;
+    border-radius: 0 30px 30px 0;
   }
 
-  .header-icon-small {
-    justify-content: center;
+  .header-icon-small svg {
+    width: 60px;
+    height: 48px;
   }
 
-  .side-title,
+  .side-title {
+    font-size: 22px;
+  }
+
   .side-quote {
-    text-align: center;
+    font-size: 13px;
+    max-width: 130px;
   }
 
   .app-container {
-    margin-left: 0;
-    max-width: 100%;
-    padding: 0 16px;
-  }
-
-  body {
-    display: block;
-    padding: 0;
-  }
-
-  .app-container main {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0 40px 0;
+    margin-left: 175px;
+    max-width: calc(100% - 190px);
+    padding: 0 8px;
   }
 
   .app-card {
-    max-width: 480px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .side-title {
-    font-size: 36px;
+    padding: 14px;
   }
 
-  .side-quote {
-    font-size: 20px;
+  #cityInput,
+  #searchBtn,
+  #locationBtn {
+    padding: 10px 12px;
+    font-size: 13px;
   }
 
   .temperature {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .weather-icon {
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .location-row h2 {
+    font-size: 16px;
   }
 
   .stats-row {
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 10px;
+  }
+
+  .stat-label,
+  .stat-value {
+    font-size: 11px;
   }
 }
