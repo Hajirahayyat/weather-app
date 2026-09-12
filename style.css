@@ -371,3 +371,70 @@ body::before {
   0%, 100% { opacity: 0.7; transform: scale(1); }
   50% { opacity: 1; transform: scale(1.1); }
 }
+@media (max-width: 900px) {
+  .app-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    clip-path: none;
+    border-radius: 0 0 24px 24px;
+    padding: 30px 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-icon-small {
+    justify-content: center;
+  }
+
+  .side-title,
+  .side-quote {
+    text-align: center;
+  }
+
+  .app-container {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  body {
+    display: block;
+    padding: 0;
+  }
+
+  .app-container main {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 40px 0;
+  }
+
+  .app-card {
+    max-width: 480px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .side-title {
+    font-size: 36px;
+  }
+
+  .side-quote {
+    font-size: 20px;
+  }
+
+  .temperature {
+    font-size: 40px;
+  }
+
+  .weather-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .stats-row {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
