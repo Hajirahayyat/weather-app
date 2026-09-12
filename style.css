@@ -411,12 +411,16 @@ body::before {
     padding: 14px;
   }
 
-  #cityInput,
-  #searchBtn,
-  #locationBtn {
-    padding: 10px 12px;
-    font-size: 13px;
-  }
+  #cityInput {
+  padding: 10px 12px 10px 40px;
+  font-size: 13px;
+}
+
+#searchBtn,
+#locationBtn {
+  padding: 10px 12px;
+  font-size: 13px;
+}
 
   .temperature {
     font-size: 30px;
