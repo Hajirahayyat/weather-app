@@ -272,15 +272,20 @@ function showRain() {
 
 function showClouds() {
   clearEffects();
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 4; i++) {
     const cloud = document.createElement('div');
-    cloud.className = 'cloud-shape';
-    const size = 80 + Math.random() * 100;
+    cloud.className = 'cloud-drift';
+    const size = 90 + Math.random() * 90;
     cloud.style.width = `${size}px`;
-    cloud.style.height = `${size * 0.5}px`;
-    cloud.style.top = `${Math.random() * 40}%`;
-    cloud.style.animationDuration = `${30 + Math.random() * 20}s`;
-    cloud.style.animationDelay = `${Math.random() * 10}s`;
+    cloud.style.height = `${size * 0.55}px`;
+    cloud.style.top = `${5 + Math.random() * 45}%`;
+    cloud.style.animationDuration = `${35 + Math.random() * 20}s`;
+    cloud.style.animationDelay = `${Math.random() * 15}s`;
+    cloud.innerHTML = `
+      <svg viewBox="0 0 100 55" xmlns="http://www.w3.org/2000/svg">
+        <path d="M78 50H22a17 17 0 1 1 3.5-33.6A20 20 0 0 1 82 28a13 13 0 0 1-4 22Z" fill="rgba(255,255,255,0.85)"/>
+      </svg>
+    `;
     weatherEffects.appendChild(cloud);
   }
 }
