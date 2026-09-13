@@ -59,19 +59,24 @@ body::before {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
 .app-container {
-    width: 100%;
-  max-width: 480px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 320px;
+  width: calc(100% - 320px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 1;
- margin-left: 340px;
 }
 
 .app-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 320px;
   background: linear-gradient(160deg, rgba(10, 25, 50, 0.92), rgba(15, 35, 65, 0.85));
   padding: 60px 40px;
@@ -81,7 +86,7 @@ body::before {
   flex-direction: column;
   gap: 16px;
   box-shadow: 8px 0 30px rgba(0, 0, 0, 0.3);
-  clip-path: path('M0,0 H280 C310,150 250,300 300,450 C350,600 280,700 280,800 H0 Z');
+  clip-path: path('M0,0 H280 C310,150 250,300 300,450 C350,600 280,750 280,900 H0 Z');
 }
 
 .header-icon-small {
@@ -347,7 +352,7 @@ body::before {
   color: #ffffff;
 }
 .weather-effects {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
