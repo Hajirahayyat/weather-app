@@ -128,13 +128,14 @@ body::before {
 }
 
 .app-card {
-  background: rgba(20, 35, 60, 0.45);
+  background: rgba(20, 35, 60, 0.55);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  padding: 24px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+  padding: 40px;
+  width: 480px;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.35);
 }
 
 .search-box {
@@ -151,21 +152,21 @@ body::before {
 
 .search-icon {
   position: absolute;
-  left: 14px;
+  left: 18px;
   top: 50%;
   transform: translateY(-50%);
   color: #888;
   pointer-events: none;
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
 }
 
 #cityInput {
   width: 100%;
-  padding: 14px 16px 14px 44px;
+  padding: 18px 20px 18px 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 30px;
-  font-size: 15px;
+  font-size: 18px;
   outline: none;
   background: rgba(255, 255, 255, 0.9);
   color: #1e2a3a;
@@ -183,10 +184,10 @@ body::before {
 
 #searchBtn,
 #locationBtn {
-  padding: 14px 20px;
+  padding: 18px 24px;
   border: none;
   border-radius: 30px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.15s ease, opacity 0.2s ease;
