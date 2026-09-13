@@ -296,3 +296,19 @@ function showSun() {
   sun.className = 'sun-glow';
   weatherEffects.appendChild(sun);
 }
+function fitAppScale() {
+  const shellWidth = 1584;
+  const shellHeight = 900;
+  const scale = Math.min(
+    window.innerWidth / shellWidth,
+    window.innerHeight / shellHeight
+  );
+  const appScale = document.getElementById('appScale');
+  appScale.style.transform = `scale(${scale})`;
+  appScale.style.width = `${shellWidth}px`;
+  appScale.style.height = `${shellHeight}px`;
+}
+
+window.addEventListener('resize', fitAppScale);
+window.addEventListener('DOMContentLoaded', fitAppScale);
+fitAppScale();
