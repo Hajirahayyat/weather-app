@@ -299,7 +299,7 @@ function showSun() {
 function fitAppScale() {
   const shellWidth = 1584;
   const shellHeight = 900;
-  const scale = Math.min(
+  const scale = Math.max(
     window.innerWidth / shellWidth,
     window.innerHeight / shellHeight
   );
