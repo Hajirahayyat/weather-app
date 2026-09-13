@@ -304,11 +304,12 @@ function fitAppScale() {
     window.innerHeight / shellHeight
   );
   const appScale = document.getElementById('appScale');
-  appScale.style.transform = `scale(${scale})`;
   appScale.style.width = `${shellWidth}px`;
   appScale.style.height = `${shellHeight}px`;
+  appScale.style.transform = `translate(-50%, -50%) scale(${scale})`;
 }
 
 window.addEventListener('resize', fitAppScale);
 window.addEventListener('DOMContentLoaded', fitAppScale);
 fitAppScale();
+
